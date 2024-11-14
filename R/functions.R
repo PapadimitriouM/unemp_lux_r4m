@@ -34,19 +34,19 @@ clean_unemp <- function(unemp_data,
 
   if(is.null(year_of_interest)){
 
-    year_of_interest <- quo(year)
+    year_of_interest <- rlang::quo(year)
 
   }
 
   if(is.null(place_name_of_interest)){
 
-    place_name_of_interest <- quo(place_name)
+    place_name_of_interest <- rlang::quo(place_name)
 
   }
 
   if(is.null(level_of_interest)){
 
-    level_of_interest <- quo(level)
+    level_of_interest <- rlang::quo(level)
 
   }
 
